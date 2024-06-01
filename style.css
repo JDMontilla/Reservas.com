@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 80px 1fr 100px;
+    grid-template-rows: 56px 80px 1fr 300px;
     min-height: 140vh;
     grid-template-areas: 
     "main main main"
@@ -68,7 +68,7 @@
 
 .destinos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px 10px; /* Aumentar el espacio vertical entre filas */
 }
 
@@ -83,7 +83,7 @@
 
 .destino img {
     width: 100%;
-    height: 280px;
+    height: 220px;
     border-radius: 10px 10px 0 0;
     border: 3px solid #F6DCAC;
 }
@@ -96,12 +96,68 @@
 }
 
 .container main{
+    margin-top: -8px;
+    display: flex;
     background: #FEAE6F;
     grid-area: main;
     position: fixed;
+    border-radius: 20px;
+    padding: 12px;
+    left: 300px;
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cajas {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+.cajas input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 3px solid #948979;
+}
+button:hover{
+    background-color: #0056b3;
 }
 
 .container footer{
-    background: #2A629A;
+    background: #01204E;
     grid-area: footer;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 2.0;
+}
+.info2{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 2.0;
+    left: 200px;  
 }
