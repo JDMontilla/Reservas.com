@@ -32,6 +32,10 @@
     cursor: pointer;
 }
 
+.estadias:hover, .lugares:hover, .Fechas:hover, .experiencias:hover{
+    color: #007BFF;
+}
+
 .login{
     width: 60px;
     height: auto;
@@ -56,7 +60,7 @@
     position: absolute;
     left: 30px;
     top: 50%;
-    transform: translateY(-80%); /* Ajustamos la posición para que quede centrado */
+    transform: translateY(-80%); 
 }
 
 .container aside {
@@ -68,7 +72,7 @@
 .destinos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px 10px; /* Aumentar el espacio vertical entre filas */
+    gap: 20px 10px; 
 }
 
 .destino {
@@ -77,7 +81,7 @@
     overflow: hidden;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centrar el texto de la descripción */
+    text-align: center; 
 }
 
 .destino img {
@@ -88,7 +92,7 @@
 }
 
 .destino p {
-    margin: 10px 0 0; /* Espacio alrededor del párrafo */
+    margin: 10px 0 0; 
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: #333;
@@ -143,16 +147,31 @@ button:hover{
     width: 70px;
     border-radius: 50px;
     position: absolute;
-    margin: 580px 0px 0px 960px;
+    margin: 513px 0px 0px 950px;
     cursor: pointer;
     z-index: 999;
     }
 
 .container footer{
+    border: 1px solid #ffffff;
+    margin-top: 6px;
     background: #01204E;
     grid-area: footer;
     position: relative;
     z-index: 9;
+}
+
+.registro{
+    display: flex;
+    justify-content: center;
+}
+
+.registro button{
+    border-radius: 3px;
+    background-color: #01204E;
+    margin: 10px;
+    border: 2px solid #fff;
+    padding: 10px;
 }
 
 .info{
@@ -161,6 +180,7 @@ button:hover{
     font-size: 14px;
     color: #ffffff;
     line-height: 2.0;
+    left: 100px;
 }
 .info2{
     position: absolute;
@@ -168,7 +188,23 @@ button:hover{
     font-size: 14px;
     color: #ffffff;
     line-height: 2.0;
-    left: 200px;  
+    left: 300px;  
+}
+
+.info3{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 2.0;
+    left: 500px;  
+}
+
+.social img{
+    width: 200px;
+    height: auto;
+    margin-left: 850px;
+    margin-top: 10px;
 }
 
 body{
@@ -203,6 +239,15 @@ body{
     margin-bottom: 10px;
 }
 
-.island1, .piscina1, .hotel1, .parque, .choza, .acampar, .map3 {
-    text-align: center; 
+.island1:hover, .piscina1:hover, .hotel1:hover, .parque:hover, .choza:hover, .acampar:hover, .map3:hover {
+    color: #ffffff;
+    text-align: center;
+}
+
+.final{
+    display: flex;
+    gap: 30px;
+    margin: 5px;
+    margin-top: -15px;
+    color: #ffffff;
 }
