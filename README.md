@@ -1,1 +1,7 @@
-Comenzar a trabajar en el Backend
+# Tareas pendientes
+## Backend 
+
+- Crear base de datos
+
+## Frontend 
+
